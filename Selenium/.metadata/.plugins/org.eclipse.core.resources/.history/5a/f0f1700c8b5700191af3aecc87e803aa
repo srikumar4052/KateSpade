@@ -1,0 +1,9 @@
+package Smoke;
+
+import org.testng.annotations.Test;
+
+public class Add_Address {
+  @Test
+  public void f() {
+  }
+}

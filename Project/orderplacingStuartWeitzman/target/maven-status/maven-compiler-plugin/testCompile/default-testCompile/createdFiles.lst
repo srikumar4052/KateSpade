@@ -1,0 +1,11 @@
+com\test\Automation\orderplacingStuartWeitzman\OnlyLoging.class
+com\test\Automation\orderplacingStuartWeitzman\orderplacingWithPAYPAL.class
+com\test\Automation\orderplacingStuartWeitzman\orderplacingWithAMEX.class
+com\test\Automation\orderplacingStuartWeitzman\LoginwithSW.class
+com\test\Automation\orderplacingStuartWeitzman\orderplacingWithMAESTRO.class
+com\test\Automation\orderplacingStuartWeitzman\registerWithSW.class
+com\test\Automation\orderplacingStuartWeitzman\orderplacingWithDiner.class
+com\test\Automation\orderplacingStuartWeitzman\orderplacingWithDISCOVER.class
+com\test\Automation\orderplacingStuartWeitzman\orderplacingWithJCB.class
+com\test\Automation\orderplacingStuartWeitzman\orderplacingWithVISA.class
+com\test\Automation\orderplacingStuartWeitzman\orderplacingWithMC.class

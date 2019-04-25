@@ -1,0 +1,73 @@
+package CH.sel;
+
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+public class DSLR_Item 
+{
+	 WebDriver driver;
+	 WebElement Electronics;
+	 WebElement DSLR ;
+	 
+  @BeforeClass 
+public void Browseropen()
+	{
+	  System.setProperty("webdriver.chrome.driver", "C:\\Users\\dell\\Downloads\\chromedriver.exe");
+	    driver = new ChromeDriver();
+		driver.get("https://www.flipkart.com/");
+		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+		driver.manage().timeouts().implicitlyWait(2,TimeUnit.MINUTES);
+		
+	}
+  @AfterClass
+  public void BrowClose() throws InterruptedException
+  {
+	  Thread.sleep(3000);
+  driver.close();
+  }
+  
+  @Test
+  public void Item_Detail()
+  {
+	  //Opening DSLR Items page
+	  driver.findElement(By.xpath("/html/body/div[2]/div/div/button")).click();
+	   Electronics = driver.findElement(By.xpath("//*[@id=\"container\"]/div/div[2]//li[1]/span"));
+	   DSLR = driver.findElement(By.xpath("//*[@id='container']/div/div[2]//li[1]/ul/li/ul/li[4]/ul/li[10]/a"));
+	  Actions hov = new Actions(driver);
+	  hov.moveToElement(Electronics).pause(2000).moveToElement(DSLR).click().build().perform();
+	  
+	  //Getting Item Details
+	  List<WebElement> Items= driver.findElements(By.xpath("//*[@id=\"container\"]/div/div[3]/div[2]/div/div[1]/div[2]"));
+	 /* try
+	  {
+		  for(int i=0;i<Items.size();i++)
+		  {
+			  String details = driver.findElement(By.xpath("//*[@id=\"container\"]/div/div[3]/div[2]/div/div[1]/div[2]/div[25]/div/div/div/a/div[2]")).getText();
+		  }
+	  }*/
+	  
+	  /*catch (Exception e)
+	  {
+		  System.out.println("");
+		  System.out.println("Moved to next page");
+		  System.out.println("");
+	  }*/
+	  for(int i=0;i<Items.size();i++)
+	  {
+		  String details = driver.findElement(By.xpath("//*[@id=\"container\"]//div[2]//div[2]/div[2]//div/a/div[2]/div[1]/div[i]")).getText();
+	  }
+	 
+	  String details = driver.findElement(By.xpath("//*[@id=\"container\"]//div[2]//div[2]/div[2]//div/a/div[2]/div[1]/div[1]")).getText();
+	  System.out.println(details);
+  }
+}

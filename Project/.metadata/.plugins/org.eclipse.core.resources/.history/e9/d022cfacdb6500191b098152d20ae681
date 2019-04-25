@@ -1,0 +1,93 @@
+package com.ch.ksd.desktopTests;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.testng.annotations.Test;
+
+import com.ch.ExcelUtils.ExcelBean;
+import com.ch.ExcelUtils.ExcelProperty;
+import com.ch.ksd.desktopPages.Homepage1;
+import com.ch.ksd.desktopPages.ShippingPage;
+import com.ch.ksd.utils.CommonUtils;
+import com.ch.ksd.utils.constants.FileConstants;
+import com.ch.report.utils.AbstractTestCaseReport;
+import com.ch.reports.TestCaseDetail;
+import com.ch.reports.TestCaseFactory;
+import com.ch.retry.Retry;
+import com.ch.utils.DriverFactory;
+import com.ch.utils.SeleniumUtils;
+
+public class TC_11 extends AbstractTestCaseReport implements FileConstants {
+
+	public void ksdURL() throws Exception {
+		CommonUtils.desktopView();
+		CommonUtils.KATESPADEURL();
+		SeleniumUtils.wait(1);
+		popup();
+
+	}
+
+	public void popup() {
+		try {
+			System.out.println("inside popup");
+			DriverFactory.getDriver().findElement(By.xpath("//*[@class=\"ui-button-icon ui-icon ui-icon-closethick\"]"))
+					.click();
+			System.out.println("PopUp closed");
+		} catch (Exception e) {
+			System.out.println("inside ppop up catch" + e.getMessage());
+		}
+	}
+
+	// TC_11
+	// Verify 'My Account' link
+	@Test
+	public void verifyMyAccountLink() throws Exception {
+		String name = new Object() {
+		}.getClass().getEnclosingMethod().getName();
+		TestCaseDetail testcase = TestCaseFactory.createTestCaseDetail(this.getClass(), name);
+		Retry retry = new Retry(1);
+		while (retry.retry()) {
+			try {
+				ksdURL();
+				SeleniumUtils.wait(3);
+				SeleniumUtils.onhoverClickLinkText("HOME", "desk accessories");
+				SeleniumUtils.wait(3);
+				Homepage1.clickproduct();
+				SeleniumUtils.wait(3);
+				Homepage1.clickQty();
+				ExcelBean element1 = ExcelProperty.getElementValue(Add_To_Bag, QTY);
+				SeleniumUtils.dropDownByVisibleText(element1, "3");
+				Homepage1.AddtoBag();
+				Homepage1.ViewBagCheckOut();
+				ShippingPage.enterEmail(Shipping_Email);
+				ShippingPage.enterFirstName(Shipping_FirstName);
+				ShippingPage.enterLastName(Shipping_LastName);
+				ExcelBean element2 = ExcelProperty.getElementValue(Shipping, Shipping_Country);
+				SeleniumUtils.dropDownByIndex(element2, 4);
+				ShippingPage.enterCompanyName(Shipping_CompanyName);
+				ShippingPage.enterAddress1(Shipping_Address1);
+				ShippingPage.enterAddress2(Shipping_Address2);
+				ShippingPage.enterCity(Shipping_City);
+				ShippingPage.enterProvince(Shipping_Province);
+				ShippingPage.enterPostalCode(Shipping_ZipCode);
+				ShippingPage.enterPhoneNumber(Shipping_Phone);
+				ShippingPage.UseThisAddressForBilling();
+				ShippingPage.ShippingMethod();
+				SeleniumUtils.wait(3);
+
+				/*
+				 * testcase.assertTrue(MyAccountPage.verifyElementsInMyAccountPopup(),
+				 * "System should display 'SignIn' and 'Create An Account' button in popup",
+				 * "System is not displaying 'SignIn' and 'Create An Account' button in popup");
+				 * testcase.pass("Verify 'My Account' link");
+				 */
+				break;
+			} catch (Exception e) {
+				testcase.retry("System is not displaying 'SignIn' and 'Create An Account' button in popup", testcase,
+						retry, e);
+				e.printStackTrace();
+			}
+		}
+	}
+
+}

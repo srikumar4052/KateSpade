@@ -1,0 +1,9 @@
+package com.test.automation.orderPlacinginKateSpade;
+
+import org.testng.annotations.Test;
+
+public class OrderplacingwithVISA {
+  @Test
+  public void f() {
+  }
+}

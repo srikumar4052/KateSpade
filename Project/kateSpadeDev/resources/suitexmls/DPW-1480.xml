@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="methods" name="StaticEduContentTest_DPW-1480">
+	<test name="Test">
+		<classes>
+			<class name="com.ch.bot.desktopTests.StaticEduContentTest">
+			</class>
+			<class name="com.ch.bot.mobileTests.MobileStaticEduContentTest">
+			</class>
+		</classes>
+	</test>
+</suite>

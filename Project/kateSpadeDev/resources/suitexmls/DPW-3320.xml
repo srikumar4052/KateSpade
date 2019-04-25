@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="methods"
+	name="RecommendedProductsHomeTest_DPW-3320">
+	<test name="Test">
+		<classes>
+			<class name="com.ch.bot.desktopTests.RecommendedProductsHomeTest">
+			</class>
+			<class name="com.ch.bot.mobileTests.MobileRecommendedHomeTest">
+			</class>
+		</classes>
+	</test>
+</suite> 

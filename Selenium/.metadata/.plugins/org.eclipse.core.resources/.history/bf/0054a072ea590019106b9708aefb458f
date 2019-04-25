@@ -1,0 +1,9 @@
+package com.test.automation.uiAutomation;
+
+import org.testng.annotations.Test;
+
+public class VerifyLogin {
+  @Test
+  public void f() {
+  }
+}

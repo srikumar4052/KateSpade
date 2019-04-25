@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 67.939 s <<< FAILURE! - in TestSuite
+Pagelunch(com.test.automation.orderPlacinginKateSpade.OrderplacingwithVISA)  Time elapsed: 67.578 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.test.automation.orderPlacinginKateSpade.OrderplacingwithVISA.waiting(OrderplacingwithVISA.java:72)
+	at com.test.automation.orderPlacinginKateSpade.OrderplacingwithVISA.Pagelunch(OrderplacingwithVISA.java:29)
+

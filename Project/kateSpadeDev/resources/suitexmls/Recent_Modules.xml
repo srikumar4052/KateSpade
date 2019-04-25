@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="10" parallel="methods" name="Recent_Modules">
+	<test name="Test">
+		<classes>
+			<!-- Desktop -->
+
+		
+		
+		
+			<class name="com.ch.bot.desktopTests.CreateAccountTest" />
+			<class name="com.ch.bot.desktopTests.YMMESectionTest" />
+			<class name="com.ch.bot.desktopTests.ShopByTireSizeTest" />
+			<class name="com.ch.bot.desktopTests.RegUserAndPswdTest" />
+			<class name="com.ch.bot.desktopTests.PersonalInformationTest" />
+			<class name="com.ch.bot.desktopTests.PasswordNSecurityTest" />
+			<class name="com.ch.bot.desktopTests.CommunicationPreferenceTest" />
+			<class name="com.ch.bot.desktopTests.CreateAccountTest" />
+			<class name="com.ch.bot.desktopTests.SignInRegFormTest" />
+			<class name="com.ch.bot.desktopTests.ShopByTireSizeTest" />
+			<class name="com.ch.bot.desktopTests.LicensePlateNumberTest" />
+			<class name="com.ch.bot.desktopTests.MyStoreTest" />
+			<class name="com.ch.bot.desktopTests.ContactInfoDuringQuickAppointTest" />
+			<class name="com.ch.bot.desktopTests.MySavedLocationTest" />
+			<class name="com.ch.bot.desktopTests.ForgotUsernameTest" />
+			<class name="com.ch.bot.desktopTests.LoginAttemptsTest" />
+			<class name="com.ch.bot.desktopTests.AbleToLogOutTest" />
+			<class name="com.ch.bot.desktopTests.HeaderTest" />
+			<class name="com.ch.bot.desktopTests.FooterTest" />
+			<!-- mobile -->
+			<class name="com.ch.bot.mobileTests.MobileCreateAccountTest" />
+			<class name="com.ch.bot.mobileTests.MobileYMMESectionTest" />
+			<class name="com.ch.bot.mobileTests.MobileShopByTireSizeTest" />
+			<class name="com.ch.bot.mobileTests.MobileRegUserAndPswdTest" />
+			<class name="com.ch.bot.mobileTests.MobilePersonalInformationTest" />
+			<class name="com.ch.bot.mobileTests.MobilePasswordNSecurityTest" />
+			<class name="com.ch.bot.mobileTests.MobileCommunicationPreferenceTest" />
+			<class name="com.ch.bot.mobileTests.MobileCreateAccountTest" />
+			<class name="com.ch.bot.mobileTests.MobileSignInRegFormTest" />
+			<class name="com.ch.bot.mobileTests.MobileLicensePlateNumberTest" />
+			<class name="com.ch.bot.mobileTests.MobileMyStoreTest" />
+			<class name="com.ch.bot.mobileTests.MobileContactInfoDuringQuickAppointTest" />
+			<class name="com.ch.bot.mobileTests.MobileShopByTireSizeTest" />
+			<class name="com.ch.bot.mobileTests.MobileMySavedLocationTest" />
+			<class name="com.ch.bot.mobileTests.MobileForgotUsernameTest" />
+			<class name="com.ch.bot.mobileTests.MobileLoginAttemptsTest" />
+			<class name="com.ch.bot.mobileTests.MobileAbleToLogOutTest" />
+			<class name="com.ch.bot.mobileTests.MobileFooterTest" />
+			<class name="com.ch.bot.mobileTests.MobileHeaderTest" />
+		</classes>
+	</test>
+</suite> 

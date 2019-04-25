@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="5" parallel="methods" name="AllModules">
+	<test name="Test">
+		<classes>
+			<!-- Desktop -->
+			<class name="com.ch.bot.desktopTests.YMMESectionTest" />
+			<class name="com.ch.bot.desktopTests.YmmeLicencePlateTest" />
+			<class name="com.ch.bot.desktopTests.ConfirmTireSizeTest" />
+			<class name="com.ch.bot.desktopTests.ShopByTireSizeTest" />
+			<class name="com.ch.bot.desktopTests.SignInRegFormTest" />
+			<class name="com.ch.bot.desktopTests.RegUserAndPswdTest" />
+			<class name="com.ch.bot.desktopTests.ForgotUsernameTest" />
+			<class name="com.ch.bot.desktopTests.LoginAttemptsTest" />
+			<class name="com.ch.bot.desktopTests.AbleToLogOutTest" />
+			<class name="com.ch.bot.desktopTests.CreateAccountTest" />
+			<class name="com.ch.bot.desktopTests.PersonalInformationTest" />
+			<class name="com.ch.bot.desktopTests.PasswordNSecurityTest" />
+			<class
+				name="com.ch.bot.desktopTests.CommunicationPreferenceTest" />
+			<class name="com.ch.bot.desktopTests.MySavedLocationTest" />
+			<class name="com.ch.bot.desktopTests.SiteMapTest" />
+			<class name="com.ch.bot.desktopTests.TiresLandingTest" />
+			<class name="com.ch.bot.desktopTests.WheelVisualizerTest" />
+			<class name="com.ch.bot.desktopTests.CreditCardTest" />
+			<class name="com.ch.bot.desktopTests.MakeAnAppointmentTest" />
+			<class name="com.ch.bot.desktopTests.BrandLandingTest" />
+			<class name="com.ch.bot.desktopTests.FooterEmailSignUpFromTest" />
+			<class name="com.ch.bot.desktopTests.PromotionsTest" />
+			<class name="com.ch.bot.desktopTests.HeaderTest" />
+			<class name="com.ch.bot.desktopTests.FooterTest" />
+			<class name="com.ch.bot.desktopTests.HomeTest" />
+			<class name="com.ch.bot.desktopTests.CarbarTest" />
+			<class name="com.ch.bot.desktopTests.ResetPasswordTest" />
+			<class name="com.ch.bot.desktopTests.CareersTest" />
+			<class name="com.ch.bot.desktopTests.StoreLocatorTest" />
+			<class name="com.ch.bot.desktopTests.ContactUsPageTest" />
+			<class name="com.ch.bot.desktopTests.StoreRatingAndReviews" />
+			<class name="com.ch.bot.desktopTests.WriteAReviewTest" />
+			<class name="com.ch.bot.desktopTests.RatingsAndReviewsTest" />
+			<class
+				name="com.ch.bot.desktopTests.WriteAReviewBazzerVoiceTest" />
+			<class name="com.ch.bot.desktopTests.ServiceDetailTest" />
+			<class name="com.ch.bot.desktopTests.TrailerTiresTest" />
+			<class name="com.ch.bot.desktopTests.TireCompareTrayTest" />
+			<class name="com.ch.bot.desktopTests.FeaturedBrandSpotTest" />
+			<class name="com.ch.bot.desktopTests.GlobalMessageTest" />
+			<class name="com.ch.bot.desktopTests.MyStoreTest" />
+			<class name="com.ch.bot.desktopTests.PromoLandingTest" />
+			<class name="com.ch.bot.desktopTests.StaticEduContentTest" />
+			<class name="com.ch.bot.desktopTests.TireLineTest" />
+			<!-- Initial Scripting -->
+			<class name="com.ch.bot.desktopTests.ServiceHistoryTest" />
+			<class name="com.ch.bot.desktopTests.MyGarageDetailsTest" />
+			<class name="com.ch.bot.desktopTests.StoreDetailsTest" />
+			<class name="com.ch.bot.desktopTests.MergeAnonymousTest" />
+			<class name="com.ch.bot.desktopTests.MyAppointmentTest" />
+			<class
+				name="com.ch.bot.desktopTests.ManageVehicleInMyGarageTest" />
+			<class name="com.ch.bot.desktopTests.BrandDetailsTest" />
+			<class
+				name="com.ch.bot.desktopTests.AddProductsAndServicesToQuoteTest" />
+			<class name="com.ch.bot.desktopTests.ServiceCategoryTest" />
+			<class name="com.ch.bot.desktopTests.ServiceLandingTest" />
+			<class name="com.ch.bot.desktopTests.TireSearchResultsTest" />
+			<class name="com.ch.bot.desktopTests.PromotionsDetailsTest" />
+			<class name="com.ch.bot.desktopTests.TireSearchTest" />
+			<class
+				name="com.ch.bot.desktopTests.IndexedContentUsingGlobalSearchTest" />
+			<class name="com.ch.bot.desktopTests.ShoppingQuoteTest" />
+			<class
+				name="com.ch.bot.desktopTests.PriceChangeForAProductTest" />
+			<class
+				name="com.ch.bot.desktopTests.FillContactInfoInQuoteTest" />
+			<class name="com.ch.bot.desktopTests.BookAppointmentTest" />
+			<class
+				name="com.ch.bot.desktopTests.ContactInfoDuringQuickAppointTest" />
+			<class name="com.ch.bot.desktopTests.TireCompareTest" />
+			<class name="com.ch.bot.desktopTests.PromotionComparisionTest" />
+			<class name="com.ch.bot.desktopTests.BreadcrumbsTest" />
+			<class name="com.ch.bot.desktopTests.FireStoreLocatorTest" />
+			<class name="com.ch.bot.desktopTests.LowerPriceTest" />
+			<class
+				name="com.ch.bot.desktopTests.RegionalPromotionLandingTest" />
+			<class
+				name="com.ch.bot.desktopTests.RecommendedProductsHomeTest" />
+			<class name="com.ch.bot.desktopTests.ArticleCategoryTest" />
+			<class name="com.ch.bot.desktopTests.ArticlePageTest" />
+			<class
+				name="com.ch.bot.desktopTests.ToViewGlobalSearchResultsTest" />
+<!-- mobile -->
+			<class name="com.ch.bot.mobileTests.MobileYMMESectionTest" />
+			<class name="com.ch.bot.mobileTests.MobileYmmeLicensePlateTest" />
+			<class name="com.ch.bot.mobileTests.MobileConfirmTireSizeTest" />
+			<class name="com.ch.bot.mobileTests.MobileShopByTireSizeTest" />
+			<class name="com.ch.bot.mobileTests.MobileSignInRegFormTest" />
+			<class name="com.ch.bot.mobileTests.MobileRegUserAndPswdTest" />
+			<class name="com.ch.bot.mobileTests.MobileForgotUsernameTest" />
+			<class name="com.ch.bot.mobileTests.MobileLoginAttemptsTest" />
+			<class name="com.ch.bot.mobileTests.MobileAbleToLogOutTest" />
+			<class name="com.ch.bot.mobileTests.MobileCreateAccountTest" />
+			<class
+				name="com.ch.bot.mobileTests.MobilePersonalInformationTest" />
+			<class
+				name="com.ch.bot.mobileTests.MobilePasswordNSecurityTest" />
+			<class
+				name="com.ch.bot.mobileTests.MobileCommunicationPreferenceTest" />
+			<class name="com.ch.bot.mobileTests.MobileMySavedLocationTest" />
+			<class name="com.ch.bot.mobileTests.MobileSiteMapTest" />
+			<class name="com.ch.bot.mobileTests.MobileTiresLandingTest" />
+			<class name="com.ch.bot.mobileTests.MobileWheelVisualizerTest" />
+			<class name="com.ch.bot.mobileTests.MobileCreditCardTest" />
+			<class
+				name="com.ch.bot.mobileTests.MobileMakeAnAppointmentTest" />
+			<class name="com.ch.bot.mobileTests.MobileBrandLandingTest" />
+			<class
+				name="com.ch.bot.mobileTests.MobileFooterEmailSignUpFormTest" />
+			<class name="com.ch.bot.mobileTests.MobilePromotionsTest" />
+			<class name="com.ch.bot.mobileTests.MobileHeaderTest" />
+			<class name="com.ch.bot.mobileTests.MobileFooterTest" />
+			<class name="com.ch.bot.mobileTests.MobileHomeTest" />
+			<class name="com.ch.bot.mobileTests.MobileCarbarTest" />
+			<class name="com.ch.bot.mobileTests.MobileResetPasswordTest" />
+			<class name="com.ch.bot.mobileTests.MobileStoreLocatorTest" />
+			<class name="com.ch.bot.mobileTests.MobileCareersTest" />
+			<class name="com.ch.bot.mobileTests.MobileContactUsPageTest" />
+			<class
+				name="com.ch.bot.mobileTests.MobileStoreRatingAndReviews" />
+			<class name="com.ch.bot.mobileTests.MobileWriteAReviewTest" />
+			<class
+				name="com.ch.bot.mobileTests.MobileRatingsAndReviewsTest" />
+			<class
+				name="com.ch.bot.mobileTests.MobileWriteAReviewBazzerVoiceTest" />
+			<class name="com.ch.bot.mobileTests.MobileServiceDetailsTest" />
+			<class name="com.ch.bot.mobileTests.MobilePromoLandingTest" />
+			<class name="com.ch.bot.mobileTests.MobileTrailerTiresTest" />
+			<class name="com.ch.bot.mobileTests.MobileTireCompareTrayTest" />
+			<class
+				name="com.ch.bot.mobileTests.MobileFeaturedBrandSpotTest" />
+			<class name="com.ch.bot.mobileTests.MobileGlobalMessageTest" />
+			<class name="com.ch.bot.mobileTests.MobileMyStoreTest" />
+			<class name="com.ch.bot.mobileTests.MobileStaticEduContentTest" />
+			<class name="com.ch.bot.mobileTests.MobileTireLineTest" />
+			<!-- Inital Scrpting -->
+			<class name="com.ch.bot.mobileTests.MobileServiceHistoryTest" />
+			<class name="com.ch.bot.mobileTests.MobileMyGarageDetailsTest" />
+			<class name="com.ch.bot.mobileTests.MobileStoreDetailsTest" />
+			<class name="com.ch.bot.mobileTests.MobileMergeAnonymousTest" />
+			<class name="com.ch.bot.mobileTests.MobileMyAppointmentTest" />
+			<class
+				name="com.ch.bot.mobileTests.MobileManageVehicleInMyGarageTest" />
+			<class name="com.ch.bot.mobileTests.MobileBrandDetailsTest" />
+			<class
+				name="com.ch.bot.mobileTests.MobileAddProAndSerToQuoteTest" />
+			<class name="com.ch.bot.mobileTests.MobileServiceCategoryTest" />
+			<class name="com.ch.bot.mobileTests.MobileServiceLandingTest" />
+			<class
+				name="com.ch.bot.mobileTests.MobileTireSearchResultsTest" />
+			<class
+				name="com.ch.bot.mobileTests.MobilePromotionsDetailsTest" />
+			<class name="com.ch.bot.mobileTests.MobileTireSearchTest" />
+			<class
+				name="com.ch.bot.mobileTests.MobileIndexedContentUsingGlobalSearchtest" />
+			<class name="com.ch.bot.mobileTests.MobileShoppingQuoteTest" />
+			<class
+				name="com.ch.bot.mobileTests.MobilePriceChangeForAProductTest" />
+			<class
+				name="com.ch.bot.mobileTests.MobileFillContactInfoInQuoteTest" />
+			<class name="com.ch.bot.mobileTests.MobileBookAppointmentTest" />
+			<class
+				name="com.ch.bot.mobileTests.MobileContactInfoDuringQuickAppointTest" />
+			<class name="com.ch.bot.mobileTests.MobileTireCompareTest" />
+			<class
+				name="com.ch.bot.mobileTests.MobilePromotionComparisionTest" />
+			<class name="com.ch.bot.mobileTests.MobileBreadCrumbsTest" />
+			<class name="com.ch.bot.mobileTests.MobileFirestoreLocatorTest" />
+			<class name="com.ch.bot.mobileTests.MobileLowerPriceTest" />
+			<class
+				name="com.ch.bot.mobileTests.MobileRegionalPromotionLandingTest" />
+			<class name="com.ch.bot.mobileTests.MobileRecommendedHomeTest" />
+			<class name="com.ch.bot.mobileTests.MobileArticleCategoryTest" />
+			<class name="com.ch.bot.mobileTests.MobileArticleTest" />
+			<class
+				name="com.ch.bot.mobileTests.MobileToViewGlobalSearchResultsTest" />
+		</classes>
+	</test>
+</suite> 
+

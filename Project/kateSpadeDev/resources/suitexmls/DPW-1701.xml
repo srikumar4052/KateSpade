@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="methods" name="BreadcrumbsTest_DPW-1701">
+	<test name="Test">
+		<classes>
+			<class name="com.ch.bot.desktopTests.BreadcrumbsTest">
+			</class>
+			<class name="com.ch.bot.mobileTests.MobileBreadCrumbsTest">
+			</class>
+		</classes>
+	</test>
+</suite> 

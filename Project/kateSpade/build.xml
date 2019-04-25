@@ -1,0 +1,483 @@
+<project name="Test" default="AllModules" basedir=".">
+	<property name="testdir" location="resources/classes" />
+	<property name="srcdir" location="src" />
+	<property name="libdir" location="lib" />
+	<property name="testconfig" location="resources/config" />
+	<property name="xmlsuitesdir" location="resources/suitexmls" />
+	<property name="full-compile" value="true" />
+
+	<path id="classpath.base" />
+
+	<path id="classpath.test">
+		<fileset dir="${libdir}">
+			<include name="**/*.jar" />
+		</fileset>
+
+		<pathelement location="${testdir}" />
+		<pathelement location="${srcdir}" />
+		<path refid="classpath.base" />
+	</path>
+
+	<target name="clean">
+		<delete>
+			<fileset dir="${testdir}" includes="**/*.class" />
+		</delete>
+	</target>
+
+	<target name="compile" depends="clean">
+		<javac encoding="ISO-8859-1" srcdir="${srcdir}" destdir="${testdir}" includeantruntime="false">
+			<classpath refid="classpath.test" />
+		</javac>
+	</target>
+
+	<taskdef resource="testngtasks">
+		<classpath>
+			<pathelement location="lib\testng-6.11.jar" />
+		</classpath>
+	</taskdef>
+
+	<target name="FullSuite_Big_O_Tires" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="FullSuite_Big_O_Tires.xml" />
+		</testng>
+	</target>
+	<target name="YMMESectionTest_DPW-1101" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1101.xml" />
+		</testng>
+	</target>
+
+	<target name="AllModules" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="AllModules.xml" />
+		</testng>
+	</target>
+
+	<target name="HeaderTest_DPW-899" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-899.xml" />
+		</testng>
+	</target>
+	<target name="PasswordNSecurityTest_DPW-1184" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1184.xml" />
+		</testng>
+	</target>
+
+	<target name="PersonalInformationTest_DPW-1183" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1183.xml" />
+		</testng>
+	</target>
+
+	<target name="ForgotUsernameTest_DPW-1131" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1131.xml" />
+		</testng>
+	</target>
+
+	<target name="RegUserAndPswdTest_DPW-1130" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1130.xml" />
+		</testng>
+	</target>
+
+	<target name="SignInRegFormTest_DPW-1129" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1129.xml" />
+		</testng>
+	</target>
+
+	<target name="ShopByTireSizeTest_DPW-1104" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1104.xml" />
+		</testng>
+	</target>
+
+	<target name="SiteMapTest_DPW-1472" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1472.xml" />
+		</testng>
+	</target>
+
+	<target name="WheelVisualizerTest_DPW-1494" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1494.xml" />
+		</testng>
+	</target>
+
+	<target name="PromotionsTest_DPW-2606" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-2606.xml" />
+		</testng>
+	</target>
+
+	<target name="FooterTest_DPW-900" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-900.xml" />
+		</testng>
+	</target>
+
+	<target name="YmmeLicencePlateTest_DPW-1102" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1102.xml" />
+		</testng>
+	</target>
+
+	<target name="HomeTest_DPW-960" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-960.xml" />
+		</testng>
+	</target>
+
+	<target name="ConfirmTireSizeTest_DPW-1103" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1103.xml" />
+		</testng>
+	</target>
+
+	<target name="LoginAttemptsTest_DPW-1133" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1133.xml" />
+		</testng>
+	</target>
+
+	<target name="AbleToLogOutTest_DPW-1134" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1134.xml" />
+		</testng>
+	</target>
+
+	<target name="CreateAccountTest_DPW-1135" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1135.xml" />
+		</testng>
+	</target>
+	<target name="CommunicationPreferenceTest_DPW-1185" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1185.xml" />
+		</testng>
+	</target>
+
+	<target name="MySavedLocationTest_DPW-1186" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1186.xml" />
+		</testng>
+	</target>
+
+	<target name="TiresLandingTest_DPW-1474" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1474.xml" />
+		</testng>
+	</target>
+
+	<target name="CreditCardTest_DPW-1546" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1546.xml" />
+		</testng>
+	</target>
+
+	<target name="MakeAnAppointmentTest_DPW-1559" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1559.xml" />
+		</testng>
+	</target>
+
+	<target name="BrandLandingTest_DPW-1567" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1567.xml" />
+		</testng>
+	</target>
+
+
+	<target name="FooterEmailSignUpFromTest_DPW-1597" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1597.xml" />
+		</testng>
+	</target>
+	<target name="CarbarTest_DPW-977" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-977.xml" />
+		</testng>
+	</target>
+
+	<target name="ResetPasswordTest_DPW-1132" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1132.xml" />
+		</testng>
+	</target>
+
+	<target name="ServiceHistoryTest_DPW-1187" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1187.xml" />
+		</testng>
+	</target>
+
+	<target name="StoreLocatorTest_DPW-1401" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1401.xml" />
+		</testng>
+	</target>
+
+	<target name="CareersTest_DPW-1476" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1476.xml" />
+		</testng>
+	</target>
+
+	<target name="ContactUsPageTest_DPW-1478" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1478.xml" />
+		</testng>
+	</target>
+
+	<target name="StaticEduContentTest_DPW-1480" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1480.xml" />
+		</testng>
+	</target>
+
+	<target name="MyGarageDetailsTest_DPW-1495" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1495.xml" />
+		</testng>
+	</target>
+
+	<target name="StoreDetailsTest_DPW-1497" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1497.xml" />
+		</testng>
+	</target>
+
+	<target name="StoreRatingAndReviews_DPW-1499" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1499.xml" />
+		</testng>
+	</target>
+
+	<target name="WriteAReviewTest_DPW-1501" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1501.xml" />
+		</testng>
+	</target>
+
+	<target name="MergeAnonymousTest_DPW-1503" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1503.xml" />
+		</testng>
+	</target>
+
+	<target name="MyAppointmentTest_DPW-1507" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1507.xml" />
+		</testng>
+	</target>
+
+	<target name="MyGarageTest_DPW-1509" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1509.xml" />
+		</testng>
+	</target>
+
+	<target name="BrandDetailsTest_DPW-1512" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1512.xml" />
+		</testng>
+	</target>
+
+	<target name="TireLineTest_DPW-1514" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1514.xml" />
+		</testng>
+	</target>
+
+	<target name="RatingsAndReviewsTest_DPW-1516" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1516.xml" />
+		</testng>
+	</target>
+
+	<target name="WriteAReviewBazzerVoiceTest_DPW-1518" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1518.xml" />
+		</testng>
+	</target>
+
+	<target name="AddProductsAndServicesToQuoteTest_DPW-1522" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1522.xml" />
+		</testng>
+	</target>
+
+	<target name="TireDetailTest_DPW-1520" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1520.xml" />
+		</testng>
+	</target>
+	<target name="ServiceCategoryTest_DPW-1523" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1523.xml" />
+		</testng>
+	</target>
+
+	<target name="ServiceDetailTest_DPW-1528" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1528.xml" />
+		</testng>
+	</target>
+
+	<target name="ServiceLandingTest_DPW-1526" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1526.xml" />
+		</testng>
+	</target>
+
+	<target name="TireSearchResultsTest_DPW-1530" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1530.xml" />
+		</testng>
+	</target>
+
+	<target name="PromoLandingTest_DPW-1532" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1532.xml" />
+		</testng>
+	</target>
+
+	<target name="PromotionsDetailsTest_DPW-1534" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1534.xml" />
+		</testng>
+	</target>
+
+	<target name="TireSearchTest_DPW-1536" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1536.xml" />
+		</testng>
+	</target>
+
+	<target name="IndexedContentUsingGlobalSearchTest_DPW-1538" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1538.xml" />
+		</testng>
+	</target>
+	<target name="PriceChangeForAProductTest_DPW-1550" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1550.xml" />
+		</testng>
+	</target>
+
+	<target name="ShoppingQuoteTest_DPW-1548" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1548.xml" />
+		</testng>
+	</target>
+
+	<target name="FillContactInfoInQuoteTest_DPW-1557" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1557.xml" />
+		</testng>
+	</target>
+
+	<target name="BookAppointmentTest_DPW-1561" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1561.xml" />
+		</testng>
+	</target>
+
+	<target name="TrailerTiresTest_DPW-1569" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1569.xml" />
+		</testng>
+	</target>
+
+	<target name="ContactInfoDuringQuickAppointTest_DPW-1572" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1572.xml" />
+		</testng>
+	</target>
+
+	<target name="TireCompareTest_DPW-1574" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1574.xml" />
+		</testng>
+	</target>
+
+	<target name="PromotionComparisionTest_DPW-1578" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1578.xml" />
+		</testng>
+	</target>
+
+	<target name="BreadcrumbsTest_DPW-1701" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-1701.xml" />
+		</testng>
+	</target>
+
+	<target name="TireCompareTrayTest_DPW-2239" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-2239.xml" />
+		</testng>
+	</target>
+
+	<target name="FireStoreLocatorTest_DPW-2268" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-2268.xml" />
+		</testng>
+	</target>
+
+	<target name="LowerPriceTest_DPW-2361" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-2361.xml" />
+		</testng>
+	</target>
+
+	<target name="FeaturedBrandSpotTest_DPW-3093" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-3093.xml" />
+		</testng>
+	</target>
+
+	<target name="RegionalPromotionLandingTest_DPW-3317" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-3317.xml" />
+		</testng>
+	</target>
+
+	<target name="RecommendedProductsHomeTest_DPW-3320" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-3320.xml" />
+		</testng>
+	</target>
+
+	<target name="ArticlePageTest_DPW-3518" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-3518.xml" />
+		</testng>
+	</target>
+
+	<target name="ArticleCategoryTest_DPW-3516" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-3516.xml" />
+		</testng>
+	</target>
+
+	<target name="ToViewGlobalSearchResultsTest_DPW-3619" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-3619.xml" />
+		</testng>
+	</target>
+
+	<target name="GlobalMessageTest_DPW-901" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-901.xml" />
+		</testng>
+	</target>
+
+	<target name="MyStoreTest_DPW-902" depends="compile">
+		<testng outputdir="${testdir}" classpathref="classpath.test">
+			<xmlfileset dir="${xmlsuitesdir}" includes="DPW-902.xml" />
+		</testng>
+	</target>
+</project>

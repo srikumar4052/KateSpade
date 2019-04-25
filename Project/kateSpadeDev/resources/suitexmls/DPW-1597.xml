@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="5" parallel="methods" name="FooterEmailSignUpFromTest_DPW-1597">
+	<test name="Test">
+		<classes>
+			<class name="com.ch.bot.desktopTests.FooterEmailSignUpFromTest">
+			</class>
+			<class name="com.ch.bot.mobileTests.MobileFooterEmailSignUpFormTest">
+			</class>
+		</classes>
+	</test>
+</suite> 

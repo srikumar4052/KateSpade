@@ -1,0 +1,91 @@
+#For Mobile Appium configuration
+platform.name=Android
+platform.version=4.4
+device.name=emulator-5554
+browser=chrome
+app.name=Chrome
+platformexe.name=WINDOWS
+driver.url=http://127.0.0.1:4723/wd/hub
+
+#-------------------------------------------------------------#
+
+EMAILS = snayak@chtsinc.com
+#control of mobile or PC
+MOBILE_PC = PC
+# For Mobile 	= mobile
+# For Desktop 	= PC
+
+#-------------------------------------------------------------#
+#control of browser
+BROWSER_NAME  = chrome
+# copy paste these below names for any browser
+
+# For Mozilla firefox	 		= firefox
+# For Google Chrome  	 		= chrome
+# For Internet Explorer  		= IE
+# For Safari 			 		= safari
+# For Opera Web Browser 		= opera
+# For Headless Browser Chrome   = headlessChrome
+# For Headless Browser IE   	= headlessIE
+# For Headless Browser firefox 	= headlessfirefox
+# For Headless PhontomJS        = phantomjsWin
+
+# For Mobile 					= mobileEmulation
+
+LOGFILE_CONTROL = Local
+
+ER_DEVICENAME = iPhone 8 Plus
+# Nexus 10
+# iPhone 6 Plus
+# iPhone 6
+# iPhone 5
+# Nexus 6P
+
+XML = false
+
+INSECURE = true
+
+# grid utils
+GRID = false
+
+GRID_HUB_URL = http://192.168.1.101:5556/wd/hub
+
+Project_Title = KateSpade Execution Report
+
+LOG_PATH = C:\\Tomcat\\webapps\\Reports\\logs\\
+
+DELIVERYPICKUP_EMAILID = artvantest1@gmail.com
+DELIVERYPICKUP_PHONE = 4562346758
+DELIVERYPICKUP_STATE = MA
+DELIVERYPICKUP_CITY = Cambridge
+DELIVERYPICKUP_POSTALCODE = 02139
+DELIVERYPICKUP_ADDRESS1 = 210 Broadway
+DELIVERYPICKUP_ADDRESS1 = 210 Broadway
+DELIVERYPICKUP_COMPANYNAME = Art Avn Furniture
+DELIVERYPICKUP_FIRSTNAME = BILL
+DELIVERYPICKUP_LASTNAME = GATES
+
+DELIVERYPICKUP_OldMattressADDRESS1 = 6127 Evergreen Rd
+DELIVERYPICKUP_OldMattressCITY = Dearborn Heights
+DELIVERYPICKUP_OldMattressSTATE = MI
+DELIVERYPICKUP_OldMattressPOSTALCODE = 48127
+DELIVERYPICKUP_FREESTOREZIPCODE = 49601
+
+
+Shipping_CREDITCARD= 5424180279791732
+Shipping_NameOnCard= BILL GATES
+Shipping_ExpMonth = 1
+Shipping_ExpYr = 2022
+Shipping_Phone = 4562346758
+Shipping_State = Roma
+Shipping_City = Roma
+Shipping_ZipCode = 40212
+Shipping_Address1 = 210 Broadway
+Shipping_ADDRESS2 = 210 Broadway
+Shipping_CompanyName = Charles Hudson
+Shipping_FirstName = BRAD
+Shipping_LastName = PITT
+Shipping_Province = Roma
+
+HOMEPAGE_SEARCHTEXT = 250048149
+HOMEPAGE_SEARCHMATTRESS = 	100045509

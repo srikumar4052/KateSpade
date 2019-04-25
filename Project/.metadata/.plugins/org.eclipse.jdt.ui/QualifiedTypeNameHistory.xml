@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.openqa.selenium.interactions.Actions"/>
+<fullyQualifiedTypeName name="com.gargoylesoftware.htmlunit.javascript.host.file.File"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.TakesScreenshot"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.OutputType"/>
+<fullyQualifiedTypeName name="org.apache.commons.io.FileUtils"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.JavascriptExecutor"/>
+<fullyQualifiedTypeName name="org.testng.annotations.Test"/>
+<fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.Keys"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="org.testng.annotations.AfterClass"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.ch.ExcelUtils.ExcelBean"/>
+<fullyQualifiedTypeName name="java.lang.SafeVarargs"/>
+<fullyQualifiedTypeName name="com.ch.ksd.utils.constants.FileConstants"/>
+<fullyQualifiedTypeName name="com.ch.ksd.desktopPages.Homepage1"/>
+<fullyQualifiedTypeName name="com.ch.ksd.desktopPages.ShippingPage"/>
+<fullyQualifiedTypeName name="com.ch.utils.PropertyUtil"/>
+<fullyQualifiedTypeName name="com.ch.ExcelUtils.ExcelProperty"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.support.ui.Select"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
+<fullyQualifiedTypeName name="com.ch.utils.DriverFactory"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+<fullyQualifiedTypeName name="com.ch.ksd.desktopPages.BillingPage"/>
+<fullyQualifiedTypeName name="com.ch.utils.SeleniumUtils"/>
+</qualifiedTypeNameHistroy>

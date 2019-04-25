@@ -1,0 +1,135 @@
+package com.ch.ksd.utils.constants;
+
+public interface ObjectConstants {
+	public static final String URL = "url";
+
+	// Art Avn
+
+	public static final String HOMEPAGE_L1_RUGSLIGHTS = "HOMEPAGE_L1_RUGSLIGHTS";
+	public static final String HOMEPAGE_RUGSLIGHTS_FIRSTPROD = "HOMEPAGE_RUGSLIGHTS_FIRSTPROD";
+	public static final String HOMEPAGE_ADDTOCART = "HOMEPAGE_ADDTOCART";
+	public static final String HOMEPAGE_VIEWCART_CHECKOUT_BUTTON = "HOMEPAGE_VIEWCART_CHECKOUT_BUTTON";
+	public static final String HOMEPAGE_YOURSELECTIONHASBEENADDED_HEADER = "HOMEPAGE_YOURSELECTIONHASBEENADDED_HEADER";
+	public static final String HOMEPAGE_SEARCH = "HOMEPAGE_SEARCH";
+	public static final String HOMEPAGE_SEARCHICON = "HOMEPAGE_SEARCHICON";
+	public static final String HOMEPAGE_HuronXBackChair = "HOMEPAGE_HuronXBackChair";
+	public static final String HOMEPAGE_L1_BABYKIDS = "HOMEPAGE_L1_BABYKIDS";
+	public static final String HOMEPAGE_L2_BABYKIDS_KIDSHEADBOARDS = "HOMEPAGE_L2_BABYKIDS_KIDSHEADBOARDS";
+	public static final String HOMEPAGE_L1_DECOR = "HOMEPAGE_L1_DECOR";
+	public static final String HOMEPAGE_L2_DECOR_WALLMIRRORS = "HOMEPAGE_L2_DECOR_WALLMIRRORS";
+
+	public static final String SECONDPRODPLP = "SECONDPRODPLP";
+
+	public static final String ShopCart_Header = "ShopCart_Header";
+	public static final String Protect_your_Furniture_Purchase1 = "Protect_your_Furniture_Purchase1";
+	public static final String Protect_your_Furniture_Purchase2 = "Protect_your_Furniture_Purchase2";
+	public static final String ShopCart_ApplytoCart = "ShopCart_ApplytoCart";
+	public static final String ShopCart_ContToDeliveryPickUp = "ShopCart_ContToDeliveryPickUp";
+
+	public static final String DeliveryPickUp_Header = "DeliveryPickUp_Header";
+	public static final String DeliveryPickUp_Email = "DeliveryPickUp_Email";
+	public static final String DeliveryPickUp_Phone = "DeliveryPickUp_Phone";
+	public static final String DeliveryPickUp_FirstName = "DeliveryPickUp_FirstName";
+	public static final String DeliveryPickUp_LastName = "DeliveryPickUp_LastName";
+	public static final String DeliveryPickUp_CompanyName = "DeliveryPickUp_CompanyName";
+	public static final String DeliveryPickUp_Address1 = "DeliveryPickUp_Address1";
+	public static final String DeliveryPickUp_Address2 = "DeliveryPickUp_Address2";
+	public static final String DeliveryPickUp_City = "DeliveryPickUp_City";
+	public static final String DeliveryPickUp_PostalCode = "DeliveryPickUp_PostalCode";
+	public static final String DeliveryPickUp_AddressAsBilling = "DeliveryPickUp_AddressAsBilling";
+	public static final String DeliveryPickUp_Continue = "DeliveryPickUp_Continue";
+	public static final String DeliveryPickUp_State = "DeliveryPickUp_State";
+	public static final String DeliveryPickUp_AdDDelivOptions = "DeliveryPickUp_AdDDelivOptions";
+	public static final String DeliveryPickUp_DeliveryOptHeader = "DeliveryPickUp_DeliveryOptHeader";
+	public static final String DeliveryPickUp_DeliveryOpt1 = "DeliveryPickUp_DeliveryOpt1";
+	public static final String DeliveryPickUp_DeliveryOpt1Text = "DeliveryPickUp_DeliveryOpt1Text";
+	public static final String DeliveryPickUp_DeliveryOptAPPLYButton = "DeliveryPickUp_DeliveryOptAPPLYButton";
+	public static final String DeliveryPickUp_DeliveryOpt1OrderSummary = "DeliveryPickUp_DeliveryOpt1OrderSummary";
+	public static final String DeliveryPickUp_RemoveMattressRecycling = "DeliveryPickUp_RemoveMattressRecycling";
+	public static final String DeliveryPickUp_FREESTOREPICKUP = "DeliveryPickUp_FREESTOREPICKUP";
+	public static final String DeliveryPickUp_CHOOSEDIFFSTORE = "DeliveryPickUp_CHOOSEDIFFSTORE";
+	public static final String DeliveryPickUp_FREESTOREZIPCODE = "DeliveryPickUp_FREESTOREZIPCODE";
+	public static final String DeliveryPickUp_FREESTORESEARCH = "DeliveryPickUp_FREESTORESEARCH";
+	public static final String DeliveryPickUp_FREESTORESSELECTLINK = "DeliveryPickUp_FREESTORESSELECTLINK";
+	public static final String DeliveryPickUp_ChOOSEPICKUPDATE = "DeliveryPickUp_ChOOSEPICKUPDATE";
+	public static final String DeliveryPickUp_PickUpDateHeader = "DeliveryPickUp_PickUpDateHeader";
+	public static final String DeliveryPickUp_AvailableDate = "DeliveryPickUp_AvailableDate";
+	public static final String DeliveryPickUp_SAVRPICKUPTAE = "DeliveryPickUp_SAVRPICKUPTAE";
+
+	public static final String Shipping_Header = "Billing_Header";
+	public static final String Shipping_CreditCard = "Billing_CreditCard";
+	public static final String Shipping_ArtVanFurniture = "Billing_ArtVanFurniture";
+	public static final String Shipping_CardNumber = "Billing_CardNumber";
+	public static final String Shipping_NameOnCard = "Billing_NameOnCard";
+	public static final String Billing_ExpDt = "Billing_ExpDt";
+	public static final String Billing_ExpYr = "Billing_ExpYr";
+	public static final String Shipping_FirstName = "FIRST_NAME";
+	public static final String Shipping_LastName = "LAST_NAME";
+	public static final String Shipping_CompanyName = "COMPANY";
+	public static final String Shipping_Address1 = "ADDRESS1";
+	public static final String Shipping_Address2 = "ADDRESS2";
+	public static final String Shipping_City = "Billing_City";
+	public static final String Shipping_ZipCode = "Billing_ZipCode";
+	public static final String Shipping_Phone = "Billing_Phone";
+	public static final String Shipping_State = "Billing_State";
+	public static final String Shipping_Continue = "Billing_Continue";
+	// public static final String Billing_ArtVanFurniture =
+	// "Billing_ArtVanFurniture";
+
+	public static final String OrderReview_Header = "OrderReview_Header";
+	public static final String OrderReview_BillingDetails = "OrderReview_BillingDetails";
+	public static final String OrderReview_PaymentMethod = "OrderReview_PaymentMethod";
+	public static final String OrderSummary = "OrderSummary";
+	public static final String DeliveryAddress = "DeliveryAddress";
+	public static final String ShippingDelivery = "ShippingDelivery";
+	public static final String ItemList1 = "ItemList1";
+
+	public static final String HOMEPAGE_MYACCOUNT_LINK = "HOMEPAGE_MYACCOUNT_LINK";
+	public static final String SIGN_IN_BUTTON = "SIGN_IN_BUTTON";
+	public static final String CREATE_ACCOUNT_BUTTON = "CREATE_ACCOUNT_BUTTON";
+	public static final String HOMEPAGE_OUTLET_TAB = "HOMEPAGE_OUTLET_TAB";
+	public static final String HOMEPAGE_PRIVACY_POLICY_LINK = "HOMEPAGE_PRIVACY_POLICY_LINK";
+	public static final String PRIVACY_POLICY_TITLE = "PRIVACY_POLICY_TITLE";
+
+	// Category
+	public static final String HOMEPAGE_LIVING_CATEGORY = "HOMEPAGE_LIVING_CATEGORY";
+	public static final String HOMEPAGE_DINING_CATEGORY = "HOMEPAGE_DINING_CATEGORY";
+	public static final String HOMEPAGE_BEDROOM_CATEGORY = "HOMEPAGE_BEDROOM_CATEGORY";
+	public static final String HOMEPAGE_MATTRESSES_CATEGORY = "HOMEPAGE_MATTRESSES_CATEGORY";
+	public static final String HOMEPAGE_OFFICE_CATEGORY = "HOMEPAGE_OFFICE_CATEGORY";
+	public static final String HOMEPAGE_BABY_KIDS_CATEGORY = "HOMEPAGE_BABY_KIDS_CATEGORY";
+	public static final String HOMEPAGE_RUGS_LIGHTING_CATEGORY = "HOMEPAGE_RUGS_LIGHTING_CATEGORY";
+	public static final String HOMEPAGE_DECOR_CATEGORY = "HOMEPAGE_DECOR_CATEGORY";
+	public static final String HOMEPAGE_OUTDOOR_CATEGORY = "HOMEPAGE_OUTDOOR_CATEGORY";
+	public static final String HOMEPAGE_DESIGN_CATEGORY = "HOMEPAGE_DESIGN_CATEGORY";
+	public static final String HOMEPAGE_OUTLET_CATEGORY = "HOMEPAGE_OUTLET_CATEGORY";
+	public static final String HOMEPAGE_SALE_CATEGORY = "HOMEPAGE_SALE_CATEGORY";
+	public static final String KIDS_BEDS_HEADBOADS_L2_CATEGORY = "KIDS_BEDS_HEADBOADS_L2_CATEGORY";
+	public static final String KIDS_FURNITURE_L2_CATEGORY = "KIDS_FURNITURE_L2_CATEGORY";
+	public static final String KIDS_BEDDINGS_DECOR_L2_CATEGORY = "KIDS_BEDDINGS_DECOR_L2_CATEGORY";
+	public static final String KIDS_NURSERY_L2_CATEGORY = "KIDS_NURSERY_L2_CATEGORY";
+	public static final String KIDS_BEDS_L3_CATEGORY = "KIDS_BEDS_L3_CATEGORY";
+	public static final String KIDS_DRESSERS_AND_CHESTS_L3_CATEGORY = "KIDS_DRESSERS_AND_CHESTS_L3_CATEGORY";
+	public static final String KIDS_BERDDING_L3_CATEGORY = "KIDS_BERDDING_L3_CATEGORY";
+	public static final String CRIBS_AND_TODDLER_BEDS_L3_CATEGORY = "CRIBS_AND_TODDLER_BEDS_L3_CATEGORY";
+
+	public static final String TITLE_IN_PRODUCT_DETAIL_PAGE = "TITLE_IN_PRODUCT_DETAIL_PAGE";
+	public static final String FILTER_BY_TITLE = "FILTER_BY_TITLE";
+	public static final String SORT_BY = "SORT_BY";
+	public static final String ZIPCODE_SEARCH_INPUT_FIELD = "ZIPCODE_SEARCH_INPUT_FIELD";
+	public static final String OPEN_TODAY_TITLE = "OPEN_TODAY_TITLE";
+	public static final String MAKE_THIS_MY_STORE_BUTTON = "MAKE_THIS_MY_STORE_BUTTON";
+	public static final String STORE_DETAILS_BUTTON = "STORE_DETAILS_BUTTON";
+	public static final String EMBEDDED_MAP = "EMBEDDED_MAP";
+	public static final String HOMEPAGE_FIND_STORE_LINK = "HOMEPAGE_FIND_STORE_LINK";
+//KateSpade 
+	public static final String HOME = "HOME";
+	public static final String SIGNINREGISTER = "SIGNINREGISTER";
+	public static final String WISHLIST = "WISHLIST";
+	public static final String VIEW_ALL = "VIEW_ALL";
+	public static final String SECONDROPDPLP = "SECONDROPDPLP";
+	public static final String QTY = "QTY";
+	public static final String Add_To_Bag = "Add_To_Bag";
+	public static final String ViewBag = "View_Bag";
+	public static final String Checkoutbtn = "CHECKOUT";
+}

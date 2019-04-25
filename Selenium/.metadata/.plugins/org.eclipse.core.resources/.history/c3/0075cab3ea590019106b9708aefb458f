@@ -1,0 +1,11 @@
+package com.test.automation.uiAutomation;
+
+import org.testng.annotations.Test;
+
+public class VerifyLogin {
+  @Test
+  public void firstTest() {
+	  System.setProperty("webdriver.chrome.driver", "D:/Automation Scripts/Selenium/uiAutomation/drivers/chromedriver.exe");
+	  
+  }
+}

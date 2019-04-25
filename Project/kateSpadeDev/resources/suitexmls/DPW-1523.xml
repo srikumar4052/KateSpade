@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="methods" name="ServiceCategoryTest_DPW-1523">
+	<test name="Test">
+		<classes>
+			<class name="com.ch.bot.desktopTests.ServiceCategoryTest">
+			</class>
+			<class name="com.ch.bot.mobileTests.MobileServiceCategoryTest">
+			</class>
+		</classes>
+	</test>
+</suite>

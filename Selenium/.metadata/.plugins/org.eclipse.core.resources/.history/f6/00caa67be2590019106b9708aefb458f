@@ -1,0 +1,139 @@
+package PLACING.OREDERS.IN.KATESPADE;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+public class OrderPlaceWithVISA {
+	
+	WebDriver driver ;
+	
+	@BeforeClass
+	public void Pagelunch() throws InterruptedException
+	{
+		
+			  System.setProperty("webdriver.chrome.driver", "‪C:\\Users\\dell\\Downloads\\chromedriver.exe");
+			    driver = new ChromeDriver();
+				driver.get("https://www.katespade.com/");
+				driver.manage().window().maximize();
+				driver.manage().deleteAllCookies();
+				
+				 
+				 // Closing the Popup
+			
+				try {
+					
+					popup();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				
+					 			
+				
+	       }	 
+	
+	
+	
+
+	/* @AfterClass
+	  public void PageClose() throws InterruptedException
+	  {
+		  Thread.sleep(3000);
+	  driver.close();
+	  }*/
+	 
+	
+  @Test
+  public void guestUsrOrderplacewithVisa() throws InterruptedException
+  {
+	  {
+			Watch_Page();
+			waiting();
+			scrolling_Down();
+			/*clicking_the_Desired_Element();
+			Add_To_Bag_And_View_Bag();
+			Checkout_As_Guest();
+			*/
+			
+		}
+  }
+		
+  public void waiting()
+	 {
+		 driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);	 
+	 }
+	 
+	 public void popup()
+	 {
+		 driver.findElement(By.xpath("//a[@id='bx-close-inside-945033']"));
+			
+			WebDriverWait wait = new WebDriverWait(driver, 30);
+			WebElement Promotion = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='bx-close-inside-945033']")));	
+			 
+			 driver.findElement(By.xpath("//*[@id='bx-close-inside-945033']")).click();
+	 }
+		 
+	 public void Watch_Page() throws InterruptedException
+	 {
+		 	
+		 Actions mov = new Actions(driver);
+		 
+			WebElement Access1 = driver.findElement(By.xpath("//a[@href=\"http://www.katespade.com/accessories/\"]"));
+			
+			WebElement watches = driver.findElement(By.xpath("//a[@href='https://www.katespade.com/accessories/watches/']"));
+			
+			mov.moveToElement(Access1).perform();
+			waiting();
+			mov.moveToElement(watches).click().build().perform();
+	 }
+	 
+	 public void scrolling_Down() throws InterruptedException
+	 {
+		 waiting();
+		 JavascriptExecutor js = (JavascriptExecutor) driver;
+		 js.executeScript("window.scrollBy(0,2000)");
+		 Thread.sleep(3000);
+		 
+	 }
+	 
+		 
+		/* public void clicking_the_Desired_Element() throws InterruptedException
+		 {
+			 driver.findElement(By.xpath("//*[@id='2e889f1913933375592ddf4e6d']/div[2]/h2/a")).click();
+				Thread.sleep(1000);
+		 }
+		 
+		 public void Selecting_the_Quantity()
+		 {
+			 WebElement QTY = driver.findElement(By.xpath("//*[@id='pdpQtySelectSelectBoxItText']"));
+			 QTY.click();
+			 driver.findElement(By.xpath("//*[@id=\"1\"]")).click();
+		 }
+		 
+		 public void Add_To_Bag_And_View_Bag()
+		 {
+			 driver.findElement(By.xpath("//*[@id='add-to-cart']")).click();
+			 driver.findElement(By.xpath("//*[@id=\"mini-cart\"]/div[2]/div[3]/a")).click();
+		 }
+		 
+		 public void Checkout_As_Guest()
+		 {
+			 driver.findElement(By.xpath("//*[@id='cart-items-form']/fieldset/div[2]//div/fieldset/button")).click();
+			 driver.findElement(By.xpath("//*[@id='primary']/div[1]/div[2]//form//button")).click();
+		 }
+		 
+		*/
+		 
+		   
+  }
+

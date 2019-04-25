@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="98783" started-at="2019-04-05T10:21:35Z" finished-at="2019-04-05T10:23:13Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="98783" started-at="2019-04-05T10:21:35Z" finished-at="2019-04-05T10:23:13Z">
+      <class name="KATE.SPADE.Products_Details">
+        <test-method status="PASS" signature="PageOpen()[pri:0, instance:KATE.SPADE.Products_Details@6aaa5eb0]" name="PageOpen" is-config="true" duration-ms="98737" started-at="2019-04-05T15:51:35Z" finished-at="2019-04-05T15:53:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PageOpen -->
+        <test-method status="FAIL" signature="Details()[pri:0, instance:KATE.SPADE.Products_Details@6aaa5eb0]" name="Details" duration-ms="0" started-at="2019-04-05T15:53:13Z" finished-at="2019-04-05T15:53:13Z">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[‪‪C:\Users\dell\Desktop\sri\zxc.xlsx (The filename, directory name, or volume label syntax is incorrect)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: ‪‪C:\Users\dell\Desktop\sri\zxc.xlsx (The filename, directory name, or volume label syntax is incorrect)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at KATE.SPADE.Products_Details.products(Products_Details.java:60)
+	at KATE.SPADE.Products_Details.Details(Products_Details.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Details -->
+      </class> <!-- KATE.SPADE.Products_Details -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

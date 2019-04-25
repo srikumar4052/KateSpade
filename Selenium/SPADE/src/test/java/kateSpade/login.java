@@ -1,0 +1,45 @@
+package kateSpade;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
+
+public class login extends Open_Close 
+
+{
+	@Test
+	public void update() throws Exception
+	{
+		Sign_in();
+		addin_myaccount();
+	Register add_new_address = new Register();
+	add_new_address.reg();
+	}
+	
+		 public void Sign_in() 
+		 {
+			  
+			 waiting();
+			 driver.findElement(By.xpath("(//span[text()='login'])[1]")).click();
+			 driver.findElement(By.xpath("//*[@id=\"dwfrm_login_username\"]")).sendKeys("snayak@chtsinc.com",Keys.TAB,"nayak@1234");
+			 driver.findElement(By.xpath("(//button[@type='submit'])[1]")).click();
+			 		 
+}
+		 public void addin_myaccount()
+		 {
+			 Actions hov= new Actions(driver);
+		
+			 //go to my account
+			 WebElement Mose = driver.findElement(By.xpath("(//a[@href='https://www.katespade.com/account'])[1]"));
+			 WebElement My_Account = driver.findElement(By.xpath("(//a[@href='https://www.katespade.com/account'])[2]"));
+			 waiting();
+			hov.moveToElement(Mose).pause(3000).moveToElement(My_Account).click().build().perform(); 
+			waiting();
+			driver.findElement(By.xpath("//span[text()='addresses']")).click();
+			waiting();
+			driver.findElement(By.xpath("//a[@title='Create New Address for this account']")).click();
+			
+		 }
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]" parallel="classes">
+  <test thread-count="5" verbose="0" name="orderplacingwithCards.xml(failed)" parallel="classes">
+    <classes>
+      <class name="com.test.Automation.orderplacingStuartWeitzman.orderplacingWithJCB">
+        <methods>
+          <include name="Pagelunch"/>
+          <include name="guestUsrOrderplacewithJCB"/>
+          <include name="PageClose"/>
+        </methods>
+      </class> <!-- com.test.Automation.orderplacingStuartWeitzman.orderplacingWithJCB -->
+      <class name="com.test.Automation.orderplacingStuartWeitzman.orderplacingWithMAESTRO">
+        <methods>
+          <include name="guestUsrOrderplacewithMAESTRO"/>
+          <include name="PageClose"/>
+          <include name="Pagelunch"/>
+        </methods>
+      </class> <!-- com.test.Automation.orderplacingStuartWeitzman.orderplacingWithMAESTRO -->
+      <class name="com.test.Automation.orderplacingStuartWeitzman.orderplacingWithDiner">
+        <methods>
+          <include name="Pagelunch"/>
+          <include name="guestUsrOrderplacewithDINER"/>
+          <include name="PageClose"/>
+        </methods>
+      </class> <!-- com.test.Automation.orderplacingStuartWeitzman.orderplacingWithDiner -->
+      <class name="com.test.Automation.orderplacingStuartWeitzman.orderplacingWithDISCOVER">
+        <methods>
+          <include name="guestUsrOrderplacewithDISCOVER"/>
+          <include name="PageClose"/>
+          <include name="Pagelunch"/>
+        </methods>
+      </class> <!-- com.test.Automation.orderplacingStuartWeitzman.orderplacingWithDISCOVER -->
+    </classes>
+  </test> <!-- orderplacingwithCards.xml(failed) -->
+</suite> <!-- Failed suite [Suite] -->

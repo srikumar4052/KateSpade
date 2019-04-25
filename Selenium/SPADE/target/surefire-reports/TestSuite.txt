@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 0.828 s <<< FAILURE! - in TestSuite
+PageOpen(kateSpade.login)  Time elapsed: 0.609 s  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable does not exist: D:\Automation Scripts\Selenium\SPADE\??C:\Users\dell\Downloads\chromedriver.exe
+
